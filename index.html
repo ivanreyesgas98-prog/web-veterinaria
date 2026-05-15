@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetDemo - Tu Clínica Veterinaria en la Web</title>
+    <!-- Tailwind CSS para un diseño moderno y rápido -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconos de FontAwesome para darle dinamismo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- 1. BARRA DE NAVEGACIÓN -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo / Nombre -->
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-paw text-teal-600 text-3xl"></i>
+                <span class="text-xl font-bold text-gray-900 tracking-tight">Vet<span class="text-teal-600">Digital</span></span>
+            </div>
+            <!-- Menú (En escritorio) -->
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#inicio" class="text-teal-600 hover:text-teal-700 transition">Inicio</a>
+                <a href="#servicios" class="text-gray-600 hover:text-teal-600 transition">Servicios</a>
+                <a href="#testimonios" class="text-gray-600 hover:text-teal-600 transition">Testimonios</a>
+                <a href="#contacto" class="text-gray-600 hover:text-teal-600 transition">Contacto</a>
+            </nav>
+            <!-- Botón de Acción Principal -->
+            <div class="hidden sm:block">
+                <a href="https://wa.me/521234567890?text=Hola,%20me%20gustaría%20agendar%20una%20cita%20para%20mi%20mascota" target="_blank" class="bg-teal-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-teal-700 transition shadow-sm flex items-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Agendar Cita</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. SECCIÓN HERO (PORTADA) -->
+    <section id="inicio" class="relative bg-gradient-to-r class bg-teal-50 py-16 md:py-24">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-6 text-center md:text-left">
+                <span class="bg-teal-100 text-teal-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Cuidado profesional de confianza</span>
+                <h1 class="text-4xl md:text-5xl font-black text-gray-900 leading-tight">
+                    El bienestar de tu mejor amigo es nuestra prioridad
+                </h1>
+                <p class="text-lg text-gray-600 max-w-lg mx-auto md:mx-0">
+                    Ofrecemos atención médica integral, urgencias y servicios preventivos con tecnología avanzada y el amor que tus mascotas merecen.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-2">
+                    <a href="#contacto" class="bg-teal-600 text-white px-8 py-3 rounded-lg font-bold text-center hover:bg-teal-700 transition shadow-md">
+                        Ver Ubicación
+                    </a>
+                    <a href="tel:+521234567890" class="border-2 border-teal-600 text-teal-600 px-8 py-3 rounded-lg font-bold text-center hover:bg-teal-50 transition flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Llamar Urgencias</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Imagen de muestra (Usa Unsplash para fotos limpias de veterinaria) -->
+            <div class="flex justify-center">
+                <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=600&auto=format&fit=crop" alt="Veterinario cuidando un perro" class="rounded-2xl shadow-2xl object-cover w-full max-w-md h-[350px]">
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN DE SERVICIOS -->
+    <section id="servicios" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Nuestros Servicios Médicos</h2>
+                <div class="w-16 h-1 bg-teal-500 mx-auto mt-3 rounded"></div>
+                <p class="text-gray-500 mt-4">Equipados con todo lo necesario para garantizar la salud de tus pacientes peludos.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Servicio 1 -->
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white transition duration-300 border border-gray-100">
+                    <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 text-xl mb-4">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Consulta General</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Revisiones preventivas, diagnósticos precisos y seguimiento oportuno de su salud.</p>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white transition duration-300 border border-gray-100">
+                    <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 text-xl mb-4">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Vacunación</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Esquemas completos y desparasitaciones para protegerlos contra enfermedades comunes.</p>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white transition duration-300 border border-gray-100">
+                    <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 text-xl mb-4">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Cirugía General</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Quirófano totalmente equipado para esterilizaciones y procedimientos de tejidos blandos.</p>
+                </div>
+                <!-- Servicio 4 -->
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white transition duration-300 border border-gray-100">
+                    <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 text-xl mb-4">
+                        <i class="fa-solid fa-radiology"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Laboratorio y Rayos X</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Resultados rápidos en análisis clínicos y radiografías para emergencias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECCIÓN DE CONTACTO E INFORMACIÓN -->
+    <section id="contacto" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12">
+            <!-- Datos e Información de la Clínica -->
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold tracking-tight">Horarios y Ubicación</h2>
+                <div class="w-12 h-1 bg-teal-400 rounded"></div>
+                <p class="text-gray-400">Visítanos en nuestras instalaciones o llámanos directamente si tienes una emergencia médica con tu mascota.</p>
+                
+                <div class="space-y-4 font-medium">
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-location-dot text-teal-400 mt-1 text-lg"></i>
+                        <p class="text-gray-300">Calle California #123, Colonia Centro,<br>Ciudad Obregón, Sonora, México.</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-clock text-teal-400 text-lg"></i>
+                        <p class="text-gray-300">Lunes a Viernes: 9:00 AM - 7:00 PM <br class="sm:hidden">| Sábados: 9:00 AM - 2:00 PM</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-phone text-teal-400 text-lg"></i>
+                        <p class="text-gray-300">Tel. Clínica: (644) 412-3456</p>
+                    </div>
+                </div>
+
+                <div class="pt-4">
+                    <a href="https://wa.me/521234567890" target="_blank" class="inline-flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-bold transition shadow">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Enviar WhatsApp Directo</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mapa / Placeholder Visual (Simulación de Google Maps) -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 h-[300px] flex items-center justify-center p-4 text-center">
+                <div class="space-y-2">
+                    <i class="fa-solid fa-map-location-dot text-gray-500 text-5xl"></i>
+                    <p class="text-gray-400 font-semibold">Aquí se integra el Mapa Interactivo de Google Maps</p>
+                    <p class="text-gray-500 text-xs px-6">Permite a los clientes trazar la ruta en tiempo real hacia la veterinaria desde su celular.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 text-center py-6 text-sm text-gray-500 border-t border-gray-800">
+        <p>&copy; 2026 Clínica Veterinaria Demo. Diseñado por tu marca/nombre.</p>
+    </footer>
+
+</body>
+</html>
