@@ -4,29 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VetDemo - Tu Clínica Veterinaria en la Web</title>
-    <!-- Tailwind CSS para un diseño moderno y rápido -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Iconos de FontAwesome para darle dinamismo -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800 font-sans scroll-smooth">
 
-    <!-- 1. BARRA DE NAVEGACIÓN -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <!-- Logo / Nombre -->
             <div class="flex items-center space-x-2">
                 <i class="fa-solid fa-paw text-teal-600 text-3xl"></i>
                 <span class="text-xl font-bold text-gray-900 tracking-tight">Vet<span class="text-teal-600">Digital</span></span>
             </div>
-            <!-- Menú (En escritorio) -->
             <nav class="hidden md:flex space-x-8 font-medium">
                 <a href="#inicio" class="text-teal-600 hover:text-teal-700 transition">Inicio</a>
                 <a href="#servicios" class="text-gray-600 hover:text-teal-600 transition">Servicios</a>
                 <a href="#testimonios" class="text-gray-600 hover:text-teal-600 transition">Testimonios</a>
                 <a href="#contacto" class="text-gray-600 hover:text-teal-600 transition">Contacto</a>
             </nav>
-            <!-- Botón de Acción Principal -->
             <div class="hidden sm:block">
                 <a href="https://wa.me/521234567890?text=Hola,%20me%20gustaría%20agendar%20una%20cita%20para%20mi%20mascota" target="_blank" class="bg-teal-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-teal-700 transition shadow-sm flex items-center space-x-2">
                     <i class="fa-brands fa-whatsapp text-lg"></i>
@@ -36,8 +30,7 @@
         </div>
     </header>
 
-    <!-- 2. SECCIÓN HERO (PORTADA) -->
-    <section id="inicio" class="relative bg-gradient-to-r class bg-teal-50 py-16 md:py-24">
+    <section id="inicio" class="relative bg-gradient-to-r from-teal-50 to-cyan-50 py-16 md:py-24">
         <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
             <div class="space-y-6 text-center md:text-left">
                 <span class="bg-teal-100 text-teal-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Cuidado profesional de confianza</span>
@@ -57,14 +50,12 @@
                     </a>
                 </div>
             </div>
-            <!-- Imagen de muestra (Usa Unsplash para fotos limpias de veterinaria) -->
             <div class="flex justify-center">
-                <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=600&auto=format&fit=crop" alt="Veterinario cuidando un perro" class="rounded-2xl shadow-2xl object-cover w-full max-w-md h-[350px]">
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=600&auto=format&fit=crop" alt="Perro y gato felices" class="rounded-2xl shadow-2xl object-cover w-full max-w-md h-[400px]">
             </div>
         </div>
     </section>
 
-    <!-- 3. SECCIÓN DE SERVICIOS -->
     <section id="servicios" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center max-w-xl mx-auto mb-12">
@@ -74,7 +65,6 @@
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Servicio 1 -->
                 <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white transition duration-300 border border-gray-100">
                     <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 text-xl mb-4">
                         <i class="fa-solid fa-stethoscope"></i>
@@ -82,7 +72,6 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Consulta General</h3>
                     <p class="text-gray-600 text-sm leading-relaxed">Revisiones preventivas, diagnósticos precisos y seguimiento oportuno de su salud.</p>
                 </div>
-                <!-- Servicio 2 -->
                 <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white transition duration-300 border border-gray-100">
                     <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 text-xl mb-4">
                         <i class="fa-solid fa-syringe"></i>
@@ -90,7 +79,6 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Vacunación</h3>
                     <p class="text-gray-600 text-sm leading-relaxed">Esquemas completos y desparasitaciones para protegerlos contra enfermedades comunes.</p>
                 </div>
-                <!-- Servicio 3 -->
                 <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white transition duration-300 border border-gray-100">
                     <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 text-xl mb-4">
                         <i class="fa-solid fa-kit-medical"></i>
@@ -98,22 +86,91 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Cirugía General</h3>
                     <p class="text-gray-600 text-sm leading-relaxed">Quirófano totalmente equipado para esterilizaciones y procedimientos de tejidos blandos.</p>
                 </div>
-                <!-- Servicio 4 -->
                 <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl hover:bg-white transition duration-300 border border-gray-100">
                     <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 text-xl mb-4">
-                        <i class="fa-solid fa-radiology"></i>
+                        <i class="fa-solid fa-radiation"></i>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Laboratorio y Rayos X</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Resultados rápidos en análisis clínicos y radiografías para emergencias.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Resultados rápidos en análisis clínicos y radiografías digitales para cualquier emergencia.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. SECCIÓN DE CONTACTO E INFORMACIÓN -->
+    <section id="testimonios" class="py-16 bg-teal-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Lo que dicen los dueños de nuestras mascotas</h2>
+                <div class="w-16 h-1 bg-teal-500 mx-auto mt-3 rounded"></div>
+                <p class="text-gray-500 mt-4">La confianza y satisfacción de nuestros clientes avalan el compromiso del equipo médico.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6">"Excelente trato y profesionalismo. Llevé a mi perro por una cirugía de emergencia y todo salió perfecto. Explican todo de forma muy clara."</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center text-white font-bold">CR</div>
+                        <div>
+                            <h4 class="font-bold text-gray-950 text-sm">Carlos Rodríguez</h4>
+                            <p class="text-xs text-gray-400">Dueño de Max (Golden Retriever)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6">"Las instalaciones están sumamente limpias y los médicos tienen mucha paciencia. El control de las vacunas de mi gatita lo llevo siempre aquí."</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center text-white font-bold">AM</div>
+                        <div>
+                            <h4 class="font-bold text-gray-950 text-sm">Ana Martínez</h4>
+                            <p class="text-xs text-gray-400">Dueña de Luna (Gato Siamés)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-6">"Me encanta que puedas agendar directo por WhatsApp. Te atienden rápido y los costos son muy justos para la calidad de atención que brindan."</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center text-white font-bold">JG</div>
+                        <div>
+                            <h4 class="font-bold text-gray-950 text-sm">Jorge Gómez</h4>
+                            <p class="text-xs text-gray-400">Dueño de Toby (Pug)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contacto" class="py-16 bg-gray-900 text-white">
         <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12">
-            <!-- Datos e Información de la Clínica -->
             <div class="space-y-6">
                 <h2 class="text-3xl font-bold tracking-tight">Horarios y Ubicación</h2>
                 <div class="w-12 h-1 bg-teal-400 rounded"></div>
@@ -142,7 +199,6 @@
                 </div>
             </div>
 
-            <!-- Mapa / Placeholder Visual (Simulación de Google Maps) -->
             <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 h-[300px] flex items-center justify-center p-4 text-center">
                 <div class="space-y-2">
                     <i class="fa-solid fa-map-location-dot text-gray-500 text-5xl"></i>
@@ -153,7 +209,6 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="bg-gray-950 text-center py-6 text-sm text-gray-500 border-t border-gray-800">
         <p>&copy; 2026 Clínica Veterinaria Demo. Diseñado por tu marca/nombre.</p>
     </footer>
